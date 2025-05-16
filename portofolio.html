@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portofolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Jomhuria&family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <title>Portofolio - Angel Firdausi</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/Desain tanpa judul (2).png" alt="Logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portofolio.html" class="nav-link active">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h2 class="last-project">My Last</h2>
+            <h1 class="project-title">PROJECT</h1>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects -->
+    <section class="portfolio-projects">
+        <div class="container">
+            <div class="project-card">
+                <div class="project-info">
+                    <p class="project-description">
+                        Produk water-reppelent menggunakan teknologi nano-coating, 
+                        membentuk lapisan pelindung yang mencegah air menembus 
+                        tanpa mengubah tekstur atau warna asli bahan.
+                    </p>
+                </div>
+                <div class="project-image">
+                    <img src="image/Gambar WhatsApp 2025-03-10 pukul 01.35.35_c74ae2d1.png" alt="Project 1">
+                </div>
+            </div>
+            
+            <div class="project-card reverse">
+                <div class="project-image">
+                    <img src="image/Gambar WhatsApp 2025-03-10 pukul 01.55.22_7b9cd3e8.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <p class="project-description">
+                        Money Wise adalah aplikasi keuangan yang mempermudah pengguna
+                        dalam mengelola anggaran, memantau pengeluaran, dan merencanakan
+                        investasi secara efisien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Angel Firdausi</h3>
+                    <p>Digital Business | UNM 2023</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Angel Firdausi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

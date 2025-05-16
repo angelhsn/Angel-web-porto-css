@@ -1,0 +1,136 @@
+/* portofolio.css - Styles specific to the Portfolio page */
+
+/* Portfolio Header */
+.portfolio-header {
+    padding: 8rem 0 2rem;
+    background-color: #fff;
+}
+
+.last-project {
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-family: "Jomhuria", serif;
+    font-size: 4.5rem;
+    letter-spacing: 10px;
+    background-color: #D9D9D9;
+    width: max-content;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.project-title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: #c0c0c0;
+}
+
+/* Portfolio Projects */
+.portfolio-projects {
+    padding: 3rem 0;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+}
+
+.project-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-info {
+    flex: 1.5;
+}
+
+.project-description {
+    background-color: #D9D9D9;
+    padding: 2.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.project-description:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .last-project {
+        font-size: 2rem;
+    }
+    
+    .project-title {
+        font-size: 3.5rem;
+    }
+    
+    .project-description {
+        font-size: 1rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-header {
+        padding: 6rem 0 2rem;
+        text-align: center;
+    }
+    
+    .project-title {
+        margin: 0 auto;
+    }
+    
+    .project-card, 
+    .project-card.reverse {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .project-image {
+        order: 1;
+    }
+    
+    .project-info {
+        order: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .last-project {
+        font-size: 1.8rem;
+    }
+    
+    .project-title {
+        font-size: 3rem;
+        padding: 0.3rem 1.5rem;
+    }
+}

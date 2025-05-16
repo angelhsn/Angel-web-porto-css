@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Jomhuria&family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <title>Blog - Angel Firdausi</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/Desain tanpa judul (2).png" alt="Logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portofolio.html" class="nav-link">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Products Section -->
+    <section class="blog-products">
+        <div class="container">
+            <h1 class="section-title">Skincare Reviews</h1>
+            <div class="products-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Skintific 5X Ceramide Barrier Moisturizer Gel (1).png" alt="Skintific">
+                    </div>
+                    <div class="product-description">
+                        <h3>Skintific 5X Ceramide</h3>
+                        <p>Skincare dengan ceramide, hyaluronic acid, dan centella untuk melembabkan dan memperkuat skin barrier.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Buy COSRX products Online in Pakistan….png" alt="COSRX">
+                    </div>
+                    <div class="product-description">
+                        <h3>COSRX</h3>
+                        <p>Membantu eksfoliasi, melembabkan, memperbaiki skin barrier, menyembuhkan bekas jerawat, dan melindungi dari sinar UV.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Skin1004 Madagascar Centella Skincare Set - Calming & Hydrating Essentials.png" alt="Madagascar Centella">
+                    </div>
+                    <div class="product-description">
+                        <h3>Skin1004 Madagascar Centella</h3>
+                        <p>Mengandung Centella Asiatica untuk menenangkan, melembapkan, dan memperbaiki skin barrier, cocok untuk kulit sensitif dan iritasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Routine -->
+    <section class="skincare-routine">
+        <div class="container">
+            <div class="routine-image">
+                <img src="image/Nighttime vibes just got an upgrade with the….png" alt="Cara Pakai">
+            </div>
+            
+            <div class="routine-steps">
+                <h2 class="steps-title">5 Step Skincare Routine</h2>
+                <img src="image/5 Step Skincare Routine.png" alt="5 step skincare Routine" class="steps-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Angel Firdausi</h3>
+                    <p>Digital Business | UNM 2023</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Angel Firdausi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

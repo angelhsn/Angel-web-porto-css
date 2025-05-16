@@ -1,0 +1,149 @@
+/* blog.css - Styles specific to the Blog page */
+
+/* Blog Products Section */
+.blog-products {
+    padding: 8rem 0 3rem;
+}
+
+.products-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    flex: 1;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-image img {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-description h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.product-description p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Skincare Routine Section */
+.skincare-routine {
+    padding: 4rem 0;
+}
+
+.routine-image {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.routine-image img {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.routine-steps {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.steps-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.steps-image {
+    max-width: 40%;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .product-description h3 {
+        font-size: 1.2rem;
+    }
+    
+    .product-description p {
+        font-size: 0.9rem;
+    }
+    
+    .steps-title {
+        font-size: 1.8rem;
+    }
+    
+    .steps-image {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-container {
+        flex-direction: column;
+    }
+    
+    .product-card {
+        margin-bottom: 2rem;
+    }
+    
+    .product-image img {
+        max-width: 50%;
+    }
+    
+    .routine-steps {
+        padding: 1.5rem;
+    }
+    
+    .steps-image {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-image img {
+        max-width: 60%;
+    }
+    
+    .steps-title {
+        font-size: 1.5rem;
+    }
+    
+    .steps-image {
+        max-width: 90%;
+    }
+}

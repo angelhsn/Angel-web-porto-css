@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Jomhuria&family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <title>About - Angel Firdausi</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/Desain tanpa judul (2).png" alt="Logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portofolio.html" class="nav-link">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h1 class="about-title">ABOUT</h1>
+                <div class="about-description">
+                    <p>
+                        HALO! Saya Angel Firdausi,
+                        mahasiswi Bisnis Digital
+                        di Universitas Negeri Makassar angkatan 2023.
+                        Saya aktif di media sosial, mengikuti tren
+                        pemasaran digital, dan memiliki minat besar
+                        dalam dunia kecantikan. Saya berencana
+                        membangun situs web portofolio untuk
+                        berbagi wawasan tentang skincare,
+                        bahan aktif, dan rutinitas perawatan kulit yang efektif.
+                        Situs ini bertujuan untuk mengedukasi audiens serta
+                        membangun kredibilitas saya di industri kecantikan.
+                    </p>
+                </div>
+            </div>
+            <div class="about-image">
+                <h1 class="me-title">ME</h1>
+                <img src="image/Hitam dan Oranye Modern Minimalis Elegan Portofolio Presentasi (2).png" alt="foto penulis" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section">
+        <div class="container">
+            <h1 class="section-title">EDUCATION</h1>
+            <div class="education-container">
+                <div class="education-card">
+                    <h3 class="school-name">Boarding school</h3>
+                    <h3 class="school-major">IPA</h3>
+                    <div class="school-year">
+                        <span>2020-2023</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <h3 class="school-name">Universitas Negeri Makassar</h3>
+                    <h3 class="school-major">Bisnis Digital</h3>
+                    <div class="school-year">
+                        <span>2023-Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Skills Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h1 class="section-title">TOOLS & SKILLS</h1>
+            <div class="tools-container">
+                <div class="tools-card">
+                    <h3 class="tools-title">TOOLS</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item"><img src="image/figma.png" alt="Figma"></div>
+                        <div class="tool-item"><img src="image/capcut.png" alt="Capcut"></div>
+                        <div class="tool-item"><img src="image/canva.png" alt="Canva"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3 class="skills-title">SKILLS</h3>
+                    <div class="skills-list">
+                        <p class="skill-item">- Tren pemasaran digital di industri kecantikan -</p>
+                        <p class="skill-item">- Review dan ulasan produk kecantikan -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Angel Firdausi</h3>
+                    <p>Digital Business | UNM 2023</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Angel Firdausi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

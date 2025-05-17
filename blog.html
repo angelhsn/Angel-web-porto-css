@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Jomhuria&family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
@@ -14,14 +15,18 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/Desain tanpa judul (2).png" alt="Logo">
-            </a>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="navbar-content">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/Desain tanpa judul (2).png" alt="Logo">
+                </a>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+            
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -43,13 +48,27 @@
             </div>
         </div>
     </nav>
-
-    <!-- Blog Products Section -->
-    <section class="blog-products">
+    
+    <!-- Search bar below navbar but above content -->
+    <div class="search-wrapper">
         <div class="container">
-            <h1 class="section-title">Skincare Reviews</h1>
-            <div class="products-container">
-                <div class="product-card">
+            <div class="search-box">
+                <input type="text" placeholder="Cari artikel skincare...">
+                <button type="submit" class="search-button">
+                    <img src="image/Desain tanpa judul (2).png" alt="Search" class="search-icon">
+                    <span>Search</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Blog Products Section -->
+<section class="blog-products">
+    <div class="container">
+        <h1 class="section-title">Skincare Reviews</h1>
+        <div class="products-container">
+            <div class="product-card">
+                <a href="https://angelfirdausi7.blogspot.com/2025/05/skintific-5x-ceramide-barrier-moisture.html">
                     <div class="product-image">
                         <img src="image/Skintific 5X Ceramide Barrier Moisturizer Gel (1).png" alt="Skintific">
                     </div>
@@ -57,9 +76,11 @@
                         <h3>Skintific 5X Ceramide</h3>
                         <p>Skincare dengan ceramide, hyaluronic acid, dan centella untuk melembabkan dan memperkuat skin barrier.</p>
                     </div>
-                </div>
-                
-                <div class="product-card">
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <a href="https://angelfirdausi7.blogspot.com/2025/05/cosrx.html">
                     <div class="product-image">
                         <img src="image/Buy COSRX products Online in Pakistan….png" alt="COSRX">
                     </div>
@@ -67,9 +88,11 @@
                         <h3>COSRX</h3>
                         <p>Membantu eksfoliasi, melembabkan, memperbaiki skin barrier, menyembuhkan bekas jerawat, dan melindungi dari sinar UV.</p>
                     </div>
-                </div>
-                
-                <div class="product-card">
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <a href="https://angelfirdausi7.blogspot.com/2025/05/centella-skin1004.html">
                     <div class="product-image">
                         <img src="image/Skin1004 Madagascar Centella Skincare Set - Calming & Hydrating Essentials.png" alt="Madagascar Centella">
                     </div>
@@ -77,11 +100,11 @@
                         <h3>Skin1004 Madagascar Centella</h3>
                         <p>Mengandung Centella Asiatica untuk menenangkan, melembapkan, dan memperbaiki skin barrier, cocok untuk kulit sensitif dan iritasi.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Skincare Routine -->
     <section class="skincare-routine">
         <div class="container">
@@ -101,13 +124,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Angel Firdausi</h3>
+                    <h3><a href="index.html" class="footer-brand">Angel Firdausi</a></h3>
                     <p>Digital Business | UNM 2023</p>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Me</a>
+                        <a href="portofolio.html" class="footer-link">Portfolio</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-icon">Instagram</a>
-                    <a href="#" class="social-icon">LinkedIn</a>
-                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="https://instagram.com/your-username" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-icon">LinkedIn</a>
+                    <a href="https://twitter.com/your-handle" target="_blank" class="social-icon">Twitter</a>
                 </div>
             </div>
             <div class="copyright">
@@ -131,6 +159,24 @@
                 document.querySelector('.navbar').classList.remove('scrolled');
             }
         });
+
+        // Search functionality
+        document.querySelector('.search-button').addEventListener('click', function() {
+            performSearch();
+        });
+
+        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        function performSearch() {
+            const searchTerm = document.querySelector('.search-box input').value.trim().toLowerCase();
+            // Implementasi pencarian bisa ditambahkan di sini
+            console.log('Searching for:', searchTerm);
+            // Tampilkan hasil pencarian atau redirect ke halaman hasil
+        }
     </script>
 </body>
 </html>
